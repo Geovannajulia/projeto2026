@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Acolher - Apoio e Informação</title>
+    <style>
+        /* Estilos Gerais e Acessibilidade */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        /* Cores Suaves e Neutras para Acolhimento */
+        :root {
+            --primary-color: #4a7c59;
+            --secondary-color: #68b0ab;
+            --dark-color: #2f3e46;
+            --light-bg: #fafafa;
+            --accent-color: #e07a5f;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: var(--dark-color);
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 15px;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .hero {
+            background-color: var(--light-bg);
+            border-left: 5px solid var(--secondary-color);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+
+        .hero h2 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        /* Seções de Conteúdo Informacional */
+        .section-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .section-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .card h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        /* Linha de Ajuda Imediata (Destaque Seguro) */
+        .emergency-box {
+            background-color: #fdf2e9;
+            border: 2px dashed var(--accent-color);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .emergency-box h3 {
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+
+        .btn-call {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Rodapé Informativo */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+
+        .disclaimer {
+            font-size: 0.8em;
+            color: #bdc3c7;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Espaço Acolher</h1>
+        <p>Informação, apoio e caminhos para o bem-estar mental</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#informacao">Transtornos</a>
+        <a href="#ajuda">Buscar Ajuda</a>
+        <a href="#direitos">Direitos</a>
+    </nav>
+
+    <div class="container" id="inicio">
+        
+        <div class="hero">
+            <h2>Você não está sozinho</h2>
+            <p>Este espaço foi planejado para oferecer caminhos claros, reduzir o estigma e fornecer informações confiáveis sobre saúde mental. Encontrar o direcionamento correto é o primeiro passo para o cuidado.</p>
+        </div>
+
+        <!-- Alerta de Emergência -->
+        <div class="emergency-box" id="ajuda">
+            <h3>Precisa de ajuda imediata?</h3>
+            <p>Se você ou alguém que você conhece está passando por uma crise severa, o Centro de Valorização da Vida (CVV) oferece apoio voluntário e gratuito.</p>
+            <a href="tel:188" class="btn-call">Ligue para o CVV (188)</a>
+        </div>
+
+        <!-- Seções Informativas -->
+        <h2 style="margin-bottom: 15px;" id="informacao">Canais de Atendimento Público (SUS)</h2>
+        <div class="section-grid">
+            <div class="card">
+                <h3>CAPS</h3>
+                <p>Os Centros de Atenção Psicossocial são serviços públicos de saúde mental destinados ao atendimento de pessoas com transtornos severos e persistentes.</p>
+            </div>
+            <div class="card">
+                <h3>Unidades Básicas (UBS)</h3>
+                <p>Os postos de saúde locais são a porta de entrada para o acolhimento inicial e podem encaminhar os pacientes para tratamentos especializados.</p>
+            </div>
+        </div>
+
+        <h2 style="margin-bottom: 15px;" id="direitos">O papel do tratamento profissional</h2>
+        <div class="section-grid">
+            <div class="card">
+                <h3>Psicoterapia</h3>
+                <p>Espaço de diálogo com psicólogos focado no desenvolvimento de ferramentas emocionais e compreensão dos padrões comportamentais.</p>
+            </div>
+            <div class="card">
+                <h3>Psiquiatria</h3>
+                <p>Acompanhamento médico focado no diagnóstico clínico e, quando necessário, no manejo seguro e balanceado de medicamentos.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Projeto Espaço Acolher - Plataforma Demonstrativa de Conscientização</p>
+        <p class="disclaimer">Aviso importante: As informações contidas neste site possuem caráter estritamente educativo e informativo. Elas não substituem, sob nenhuma hipótese, o diagnóstico, o aconselhamento ou o acompanhamento de profissionais de saúde qualificados.</p>
+    </footer>
+
+</body>
+</html>
+
+</body>
+</html>
